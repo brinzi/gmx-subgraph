@@ -1,0 +1,15 @@
+{
+  "name": "gmx-pulse-referrals",
+  "license": "UNLICENSED",
+  "scripts": {
+    "codegen": "graph codegen",
+    "graph": "graph --help",
+    "build": "graph build", 
+    "gcreate": "graph create gmx-pulse-referrals  --node http://127.0.0.1:8020",
+    "deploy": "graph deploy --ipfs http://localhost:5001 --node http://localhost:8020  gmx-pulse-referrals ./subgraph.yaml"
+  },
+  "dependencies": {
+    "@graphprotocol/graph-cli": "0.21.1",
+    "@graphprotocol/graph-ts": "0.20.0"
+  }
+}
